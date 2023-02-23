@@ -1,0 +1,129 @@
+body {
+    background: radial-gradient(
+        circle,
+        rgba(65, 62, 62, 0.958420868347339) 29%,
+        rgba(31, 29, 29, 1) 100%
+    );
+    height: 100vh;
+}
+
+.slider {
+    &__container {
+        @media (max-width: 420px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 50px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 39px 4px rgba(255, 255, 255, 0.2);
+
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__slider-box-line {
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        transition: 1s;
+    }
+
+    &__slider-box-image {
+        min-width: 80vw;
+        object-fit: cover;
+        max-height: 75vh;
+
+        @media (max-width: 992px) {
+            object-fit: cover;
+            min-height: 70vh;
+        }
+    }
+
+    &__button {
+        background-color: rgba(255, 255, 255, 0.329);
+        border: none;
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 8px 10px 10px;
+        box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+        cursor: pointer;
+        transition: 0.3s;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+
+        &:active {
+            box-shadow: 0px 0px 28px 36px rgba(23, 27, 31, 0.2) inset;
+            transform: scale(0.97);
+        }
+    }
+
+    &__button-left {
+        position: absolute;
+        top: 45%;
+        left: 1%;
+    }
+
+    &__button-right {
+        position: absolute;
+        top: 45%;
+        right: 1%;
+    }
+
+    &__dots-set {
+        min-height: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    &__dot {
+        transition: 0.3s;
+        align-self: center;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.329);
+        cursor: pointer;
+
+        &.active-dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.829);
+        }
+    }
+
+    &__mobile-recomandation {
+        font-size: 1rem;
+        text-align: center;
+
+        @media (min-width: 420px) {
+            display: none;
+        }
+    }
+
+    &__rotate-device-pic {
+        align-self: center;
+        max-height: 8vh;
+
+        @media (min-width: 420px) {
+            display: none;
+        }
+    }
+}

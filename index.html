@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./src/scripts/slider.js"></script>
+    <link rel="stylesheet" href="./src/styles/css/main.min.css" />
+    <title>Slider JS</title>
+</head>
+
+<body>
+    <section class="slider">
+        <div class="container slider__container">
+            <div class="slider__wrapper">
+                <div class="slider__slider-box-line">
+                    <img class="slider__slider-box-image" src="./src/assets/images/town.jpg" alt="town" />
+                    <img class="slider__slider-box-image" src="./src/assets/images/man forest.jpg"
+                        alt="man in forest" />
+                    <img class="slider__slider-box-image" src="./src/assets/images/mountain lake.jpg"
+                        alt="mountain lake" />
+                    <img class="slider__slider-box-image" src="./src/assets/images/forest house.jpg"
+                        alt="house in forest" />
+                    <img class="slider__slider-box-image" src="./src/assets/images/castle.jpg"
+                        alt="shoe discount banner" />
+                    <img class="slider__slider-box-image" src="./src/assets/images/retro car.jpg" alt="car" />
+                </div>
+                <button class="slider__button slider__button-left" type="button">
+                    ←
+                </button>
+                <button class="slider__button slider__button-right" type="button">
+                    →
+                </button>
+            </div>
+            <div class="slider__dots-set">
+                <div id="0" class="slider__dot active-dot"></div>
+                <div id="1" class="slider__dot"></div>
+                <div id="2" class="slider__dot"></div>
+                <div id="3" class="slider__dot"></div>
+                <div id="4" class="slider__dot"></div>
+                <div id="5" class="slider__dot"></div>
+            </div>
+            <h2 class="slider__mobile-recomandation">
+                Rotate your device, to see full-size pictures
+            </h2>
+            <img class="slider__rotate-device-pic" src="./src/assets/icons/mobile-rotate-rotation-icon.png"
+                alt="rotate your phone oic" />
+        </div>
+    </section>
+</body>
+
+</html>
